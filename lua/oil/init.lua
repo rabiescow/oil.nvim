@@ -1327,7 +1327,7 @@ M.setup = function(opts)
       end,
     })
   end
-  vim.api.nvim_create_autocmd({ "UIEnter", "WinNew" }, {
+  vim.api.nvim_create_autocmd("UIEnter", {
     desc = "Restore window options when splitting an oil window",
     group = aug,
     pattern = "*",
